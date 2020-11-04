@@ -1,13 +1,16 @@
-from lxml import etree
+import os
+import sys
+from datetime import date
+
 import requests
 import urllib3
-import os
-from datetime import date
-import sys
+from lxml import etree
 from tqdm import tqdm
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 utf8_parser = etree.XMLParser(encoding='utf-8')
+
+#123
 
 path = os.getcwd()+"/"+date.today().strftime("%B %d, %Y")
 try:
